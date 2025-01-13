@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card Project</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .wrapper {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: burlywood;
+        }
+
+        .container {
+            /* border: 1px solid black; */
+            border-radius: 30px;
+            position: relative;
+            top: 10px;
+            width: 700px;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @font-face {
+            font-family: 'Fraunces';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/fraunces/v26/6NUu8FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Wa0K7iN7iQcIfJD58njU0oc0qv86Rg.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+        }
+
+        .content {
+            background-color: white;
+            /* border-radius: 5px; */
+            padding: 20px;
+            /* border: 1px solid black; */
+            width: 300px;
+            height: 400px;
+            display: grid;
+        }
+
+        h1 {
+            font-family: Fraunces;
+        }
+
+        .mugimg {
+            height: 400px;
+            width: 400px;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+        }
+
+        .buttonn {
+            /* border: 1px solid black; */
+            border-radius: 5px;
+            display: flex;
+            height: 30px;
+            width: 200px;
+            background-color: rgba(6, 134, 134, 0.719);
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            left: 35px;
+            color: white;
+            padding: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h2 {
+            color: rgba(6, 134, 134, 1);
+            font-family: fraunces;
+        }
+
+        h3 {
+            font-family: montserrat;
+            color: gray;
+            letter-spacing: 5px;
+        }
+
+        .iconn {
+            height: 18px;
+            width: 18px;
+            padding: 1px;
+            position: relative;
+            right: 8px;
+        }
+
+        .par {
+            padding: 10px;
+            color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <img class="mugimg" src="mug.jpg">
+            <div class="content">
+                <h3>COFFEE MUG</h3>
+                <h1>White Coffee <br> Mug</h1>
+                <p class="par">Coffee Mugs are designed to express <br> Emotions. These are acclaimed for their <br>
+                    amazing design and superior quality</p>
+                <h2>149</h2>
+                <p><s>239</s></p>
+                <buttton class="buttonn">
+                    <img class="iconn" src="icon-cart.png">
+                    Add to cart
+                </buttton>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
